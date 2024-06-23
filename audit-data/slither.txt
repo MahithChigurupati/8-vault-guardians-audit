@@ -1,0 +1,86 @@
+INFO:Detectors:
+AaveAdapter._aaveDivest(IERC20,uint256) (src/protocol/investableUniverseAdapters/AaveAdapter.sol#42-48) ignores return value by i_aavePool.withdraw({asset:address(token),amount:amount,to:address(this)}) (src/protocol/investableUniverseAdapters/AaveAdapter.sol#43-47)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unused-return
+INFO:Detectors:
+2 different versions of Solidity are used:
+        - Version constraint ^0.8.20 is used by:
+                - lib/openzeppelin-contracts/contracts/access/Ownable.sol#4
+                - lib/openzeppelin-contracts/contracts/governance/Governor.sol#4
+                - lib/openzeppelin-contracts/contracts/governance/IGovernor.sol#4
+                - lib/openzeppelin-contracts/contracts/governance/extensions/GovernorCountingSimple.sol#4
+                - lib/openzeppelin-contracts/contracts/governance/extensions/GovernorVotes.sol#4
+                - lib/openzeppelin-contracts/contracts/governance/extensions/GovernorVotesQuorumFraction.sol#4
+                - lib/openzeppelin-contracts/contracts/governance/utils/IVotes.sol#3
+                - lib/openzeppelin-contracts/contracts/governance/utils/Votes.sol#3
+                - lib/openzeppelin-contracts/contracts/interfaces/IERC1271.sol#4
+                - lib/openzeppelin-contracts/contracts/interfaces/IERC165.sol#4
+                - lib/openzeppelin-contracts/contracts/interfaces/IERC4626.sol#4
+                - lib/openzeppelin-contracts/contracts/interfaces/IERC5267.sol#4
+                - lib/openzeppelin-contracts/contracts/interfaces/IERC5805.sol#4
+                - lib/openzeppelin-contracts/contracts/interfaces/IERC6372.sol#4
+                - lib/openzeppelin-contracts/contracts/interfaces/draft-IERC6093.sol#3
+                - lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155Receiver.sol#4
+                - lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol#4
+                - lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol#4
+                - lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Permit.sol#4
+                - lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Votes.sol#4
+                - lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC4626.sol#4
+                - lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol#4
+                - lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Permit.sol#4
+                - lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol#4
+                - lib/openzeppelin-contracts/contracts/token/ERC721/IERC721Receiver.sol#4
+                - lib/openzeppelin-contracts/contracts/utils/Address.sol#4
+                - lib/openzeppelin-contracts/contracts/utils/Context.sol#4
+                - lib/openzeppelin-contracts/contracts/utils/Nonces.sol#3
+                - lib/openzeppelin-contracts/contracts/utils/ReentrancyGuard.sol#4
+                - lib/openzeppelin-contracts/contracts/utils/ShortStrings.sol#4
+                - lib/openzeppelin-contracts/contracts/utils/StorageSlot.sol#5
+                - lib/openzeppelin-contracts/contracts/utils/Strings.sol#4
+                - lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol#4
+                - lib/openzeppelin-contracts/contracts/utils/cryptography/EIP712.sol#4
+                - lib/openzeppelin-contracts/contracts/utils/cryptography/MessageHashUtils.sol#4
+                - lib/openzeppelin-contracts/contracts/utils/cryptography/SignatureChecker.sol#4
+                - lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol#4
+                - lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol#4
+                - lib/openzeppelin-contracts/contracts/utils/math/Math.sol#4
+                - lib/openzeppelin-contracts/contracts/utils/math/SafeCast.sol#5
+                - lib/openzeppelin-contracts/contracts/utils/math/SignedMath.sol#4
+                - lib/openzeppelin-contracts/contracts/utils/structs/Checkpoints.sol#5
+                - lib/openzeppelin-contracts/contracts/utils/structs/DoubleEndedQueue.sol#3
+                - lib/openzeppelin-contracts/contracts/utils/types/Time.sol#4
+        - Version constraint 0.8.20 is used by:
+                - src/abstract/AStaticTokenData.sol#2
+                - src/abstract/AStaticUSDCData.sol#2
+                - src/abstract/AStaticWethData.sol#2
+                - src/dao/VaultGuardianGovernor.sol#2
+                - src/dao/VaultGuardianToken.sol#2
+                - src/interfaces/IVaultData.sol#2
+                - src/interfaces/IVaultGuardians.sol#2
+                - src/interfaces/IVaultShares.sol#2
+                - src/interfaces/InvestableUniverseAdapter.sol#2
+                - src/protocol/VaultGuardians.sol#28
+                - src/protocol/VaultGuardiansBase.sol#28
+                - src/protocol/VaultShares.sol#2
+                - src/protocol/investableUniverseAdapters/AaveAdapter.sol#2
+                - src/protocol/investableUniverseAdapters/UniswapAdapter.sol#2
+                - src/vendor/DataTypes.sol#2
+                - src/vendor/IPool.sol#2
+                - src/vendor/IUniswapV2Factory.sol#3
+                - src/vendor/IUniswapV2Router01.sol#2
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#different-pragma-directives-are-used
+INFO:Detectors:
+The following unused import(s) in lib/openzeppelin-contracts/contracts/governance/IGovernor.sol should be removed: 
+        -import {IERC165} from "../interfaces/IERC165.sol"; (lib/openzeppelin-contracts/contracts/governance/IGovernor.sol#6)
+The following unused import(s) in lib/openzeppelin-contracts/contracts/interfaces/IERC165.sol should be removed: 
+        -import {IERC165} from "../utils/introspection/IERC165.sol"; (lib/openzeppelin-contracts/contracts/interfaces/IERC165.sol#6)
+The following unused import(s) in lib/openzeppelin-contracts/contracts/governance/extensions/GovernorVotes.sol should be removed: 
+        -import {SafeCast} from "../../utils/math/SafeCast.sol"; (lib/openzeppelin-contracts/contracts/governance/extensions/GovernorVotes.sol#9)
+The following unused import(s) in lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol should be removed: 
+        -import {IERC20Permit} from "../extensions/IERC20Permit.sol"; (lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol#7)
+The following unused import(s) in src/interfaces/InvestableUniverseAdapter.sol should be removed: 
+        -import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol"; (src/interfaces/InvestableUniverseAdapter.sol#4)
+The following unused import(s) in src/protocol/VaultShares.sol should be removed: 
+        -import {DataTypes} from "../vendor/DataTypes.sol"; (src/protocol/VaultShares.sol#8)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unused-imports
+INFO:Slither:. analyzed (63 contracts with 92 detectors), 8 result(s) found
+make: *** [slither] Error 255

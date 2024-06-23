@@ -55,8 +55,6 @@ Lead Auditors:
   - [Low](#low)
     - [\[L-1\] Incorrect vault name and symbol](#l-1-incorrect-vault-name-and-symbol)
     - [\[L-2\] Unassigned return value when divesting AAVE funds](#l-2-unassigned-return-value-when-divesting-aave-funds)
-    - [\[S-#\] TITLE (Root Cause -\> Impact)](#s--title-root-cause---impact)
-    - [\[S-#\] TITLE (Root Cause -\> Impact)](#s--title-root-cause---impact-1)
 
 # Protocol Summary
 
@@ -463,28 +461,3 @@ function _aaveDivest(IERC20 token, uint256 amount) internal returns (uint256 amo
         });
 }
 ```
-
-
-### [S-#] TITLE (Root Cause -> Impact)
-
-**Description:** 
-
-**Impact:** 
-
-**Proof of Concept:**
-
-**Recommended Mitigation:** 
-
-
---------
-
-
-### [S-#] TITLE (Root Cause -> Impact)
-
-**Description:** 
-
-**Impact:** 
-
-**Proof of Concept:**
-
-**Recommended Mitigation:** 
